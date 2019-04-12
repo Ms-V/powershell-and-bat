@@ -1,3 +1,5 @@
+Get-Date > D:\dcdiagreport\dcdiagreport.txt
+dcdiag /a /q >> D:\dcdiagreport\dcdiagreport.txt
 $From="you mail"
 $To="Addressee "
 $Subject="mail Title" 
