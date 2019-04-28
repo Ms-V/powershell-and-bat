@@ -6,13 +6,13 @@ $win10pro = "win10pro key"
 $ver = Get-WmiObject -Class Win32_OperatingSystem | Select-Object -ExpandProperty Caption
 if($ver -like "*Windows 10*")
 {
-    if($ver -like "×¨Òµ°æ" -or "Professional")
+    if($ver -like "ä¸“ä¸šç‰ˆ" -or "Professional")
     {
         Write-Host "Win10 Pro"
         slmgr -ipk $win10pro
         slmgr -ato
     }
-    elseif($ver -like "ÆóÒµ°æ" -or "Enterprise")
+    elseif($ver -like "ä¼ä¸šç‰ˆ" -or "Enterprise")
     {
         Write-Host "Win10 ENT"
         slmgr -ipk $win10ent
