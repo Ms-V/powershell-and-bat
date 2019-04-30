@@ -3,6 +3,7 @@ cls
 color 0A
  
 @echo off
+pushd "%~dp0"
 echo.
 echo ===Choose you os lanuage for activation===
 echo.
@@ -11,7 +12,7 @@ echo.
 echo 2:activation in japanese os
 echo.
 echo.
-set/p sel=Please choose lanuage£º
+set/p sel=Please choose lanuage:
 if "%sel%"=="1" goto cn
 if "%sel%"=="2" goto jp
 echo Choose error,exit the bat.

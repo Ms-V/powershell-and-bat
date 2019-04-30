@@ -1,8 +1,8 @@
-$win7 = "win7"
-$win10ent = "win10ent key"
-$win10pro = "win10ent pro"
+$win7 = "win7 key"
+$win10ent = "win10 ent key"
+$win10pro = "win10 pro key"
 $ver = Get-WmiObject -Class Win32_OperatingSystem | Select-Object -ExpandProperty Caption
-if($ver -like "*Windows 10*" -and $ver -like "*专业版*")
+if($ver -like "*Windows 10*" -and $ver -like "*רҵ��*")
 {
     Write-Host "The os is "$ver "AKA Win10 pro.start inject key"
     slmgr -ipk $win10pro
@@ -10,10 +10,10 @@ if($ver -like "*Windows 10*" -and $ver -like "*专业版*")
     slmgr -ato
     Read-Host
 }
-elseif($ver -like "*Windows 10*" -and $ver -like "*企业版*")
+elseif($ver -like "*Windows 10*" -and $ver -like "*��ҵ��*")
 {
     Write-Host "The os is "$ver "AKA Win10 Ent.start inject key"
-    slmgr -ipk $win10pro
+    slmgr -ipk $win10ent
     Write-Host "Start activation"
     slmgr -ato
     Read-Host
