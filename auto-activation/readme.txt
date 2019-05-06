@@ -1,3 +1,4 @@
 一个自动激活windows小程序
 因为公司有两种语言的os，而且 日文版的只要powershell放进中文就特么乱码，所以写了两个版本
 bat是为了绕过powershell策略和以管理员权限运行的写的，直接以管理员权限运行bat，就ojbk了
+key自己改啊 .ps1 头三行
