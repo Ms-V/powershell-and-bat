@@ -46,4 +46,4 @@ New-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet
 new-item "HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Domains\skype.com\api.teams\" -Force
 New-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Domains\skype.com\api.teams\" -Name https -Value 2 -PropertyType DWORD -Force
 
-Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\2" -Name 1609 -Value 0
+Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\2" -Name 1609 -Value 0 #启用IE设置中-安全-受信任站点-自定义级别-显示混合内容-启用！
