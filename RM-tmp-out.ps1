@@ -1,5 +1,5 @@
 ﻿#服务器临时文件夹要每天自动清除，并留下提示信息，用的win2016任务计划执行脚本
-$date_now=get-date -format 'yyyy-MM-dd hh:mm:ss'  #拿下时间并整形
+$date_now=get-date -format 'yyyy-MM-dd HH:mm:ss'  #拿下时间并整形
 Remove-Item E:\public-software\tmp\* -recurse #清空目标文件夹
 $directoryInfo = Get-ChildItem E:\public-software\tmp\ | Measure-Object #测量下目标文件夹
 if($directoryInfo.count -eq 0) #如果测量的结果.Count是0文件夹就是空的
