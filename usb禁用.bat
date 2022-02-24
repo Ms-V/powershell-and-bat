@@ -1,0 +1,1 @@
+REG ADD HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\RemovableStorageDevices /v Deny_All /t REG_DWORD /d 1 /f

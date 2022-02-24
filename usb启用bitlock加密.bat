@@ -1,0 +1,2 @@
+REG ADD HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\FVE /v RDVDenyCrossOrg /t REG_DWORD /d 0 /f
+REG ADD HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Policies\Microsoft\FVE /v RDVDenyWriteAccess /t REG_DWORD /d 1 /f
